@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 2 </title>
+    <style>
+        /* CSS */
+        /* Comment ของ CSS */
+        /* 1. แต่งใคร ? (id Class DOM) 2.แต่งอะไร ?*/
+
+
+        /* ทั้งหน้า */
+        body {
+            background-color: rgb(253, 253, 253);
+            font-family: 'Kanit';
+        }
+
+
+        @font-face {
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Light.ttf');
+        }
+
+        .container{
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: azure;
+            padding: 20px;
+        }
+        
+        .Header{
+            font-size: 40px;
+            text-align: center; /*จัดการ Text*/ 
+        }
+
+        .header-form{
+            width: 140px;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .form-input{
+            margin-bottom: 20px;
+        }
+
+        input.form, textarea{
+            border: 1px rgb(197, 197, 197) solid;
+            width: 100%;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .button{
+            border: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #2962FF;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Comment ของ HTML-->
+    <div class="container">
+        
+        <div class="Header form-input">
+        Register from
+        </div>
+            
+            <div class="flex form-input" >
+                <div class="header-form"> ชื่อจริง </div>
+                <input class="form" type="text">
+            </div>
+            
+            <div class="flex form-input">
+                <div class="header-form"> นามสกุล </div> 
+                <input class="form" type="text">
+            </div>
+            
+            <div class="flex form-input">
+                <div class="header-form"> อายุ </div>
+                <input class="form" type="number" min="0" max="100">
+            </div>
+            
+            <div class="flex Gender form-input">
+                <div class="header-form" >เพศ</div>
+                <div>
+                    <input name="gender" type="radio"> ชาย
+                    <input name="gender" type="radio"> หญิง
+                    <input name="gender" type="radio"> ไม่ระบุ
+                </div>
+            </div>
+            <div class="form-input">
+                สิ่งที่สนใจ
+                <div>
+                    <input name="interest" type="checkbox"> Coding
+                </div>
+            </div>
+            <div class="form-input">
+                <input name="interest" type="checkbox"> Play games
+            </div>
+            <div class="form-input">
+                <input name="interest" type="checkbox"> etc.
+            </div>
+            <div class="form-input">
+                คำอธิบายตัวตนเพิ่มเติม
+                <div>
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="form-input center">
+                <a href="https://www.facebook.com/suttiruk.pimsuk.1/" target="_blank">T&C</a>
+            </div>
+            <div class="center" >
+                <button class="button">ส่งข้อมูล</button>
+            </div>
+
+    </div>
+ 
+</body>
+
+</html>
